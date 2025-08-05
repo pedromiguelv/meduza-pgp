@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PGP Signature Verification</title>
+</head>
+<body>
+    <h2>PGP Signature Verifier</h2>
+    <form action="/verify" method="post" enctype="multipart/form-data">
+        <label>Paste signed message:</label><br>
+        <textarea name="message" rows="10" cols="60"></textarea><br><br>
+        <label>Or upload .asc file:</label>
+        <input type="file" name="file" accept=".asc"><br><br>
+        <button type="submit">Verify</button>
+    </form>
+</body>
+</html>
